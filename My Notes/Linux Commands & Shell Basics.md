@@ -149,6 +149,7 @@ du -ah                         # Displays disk usage at the file and directory l
 ```
 
 Sample output:
+
 ![4fa06ac69c694ce320193f32af9781d3.png](../_resources/4fa06ac69c694ce320193f32af9781d3.png)
 
 **`du -ah` vs `df -h`**
@@ -226,7 +227,9 @@ source filename              # Reload a profile or script
 
 * **Foreground jobs** – running and taking input
 * **Background jobs** – running without terminal interaction
+
 ![7fbfd59551d28a6932a0acec72cc8f55.png](../_resources/7fbfd59551d28a6932a0acec72cc8f55.png)
+
 ### Commands
 
 ```text
@@ -275,13 +278,16 @@ Important columns:
 * **PID** – Process ID
 * **TTY** – Terminal (TeliType)
 * **CMD** – Command name
+
 ![e79a1b715fd2e40215f31c4663c82144.png](../_resources/e79a1b715fd2e40215f31c4663c82144.png)
+
 ---
 
 ## 13. Signals & Killing Processes
 ```bash
 kill -l                       # List all signals
 ```
+
 ![f9a6d92b62a5b64d763e5b328d8179c2.png](../_resources/f9a6d92b62a5b64d763e5b328d8179c2.png)
 
 ```bash
@@ -391,7 +397,9 @@ find / -name junk > results.txt
 ```
 
 You might still see many errors on screen.
+
 ![39068885716b4d720f88cd1eab7b0b3d.png](../_resources/39068885716b4d720f88cd1eab7b0b3d.png)
+
 Why?
 
 * `>` redirects **STDOUT (1)** only
@@ -419,6 +427,7 @@ If you do not care about error messages at all:
 find / -name junk 2> /dev/null
 ```
 **Explanation:**
+
 ![b0d552cbb15aa850fd9d83d338c7a6d0.png](../_resources/b0d552cbb15aa850fd9d83d338c7a6d0.png)
 
 * Results are displayed to `STDOUT`. Errors to `/dev/null`
@@ -605,6 +614,7 @@ cat fruits.txt | sort
 ![fe98897a7e7f2f7b90e498436a91620b.png](../_resources/fe98897a7e7f2f7b90e498436a91620b.png)
 
 **Numeric sorting problem**
+
 ![e10967fb5fdd30f570848d739c1d3cf8.png](../_resources/e10967fb5fdd30f570848d739c1d3cf8.png)
 
 **Numeric sort**

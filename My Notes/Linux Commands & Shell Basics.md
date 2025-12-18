@@ -149,6 +149,7 @@ du -ah                         # Displays disk usage at the file and directory l
 ```
 
 Sample output:
+
 ![4fa06ac69c694ce320193f32af9781d3.png](../_resources/4fa06ac69c694ce320193f32af9781d3.png)
 
 **`du -ah` vs `df -h`**
@@ -226,6 +227,7 @@ source filename              # Reload a profile or script
 
 * **Foreground jobs** – running and taking input
 * **Background jobs** – running without terminal interaction
+
 ![7fbfd59551d28a6932a0acec72cc8f55.png](../_resources/7fbfd59551d28a6932a0acec72cc8f55.png)
 ### Commands
 
@@ -275,6 +277,7 @@ Important columns:
 * **PID** – Process ID
 * **TTY** – Terminal (TeliType)
 * **CMD** – Command name
+
 ![e79a1b715fd2e40215f31c4663c82144.png](../_resources/e79a1b715fd2e40215f31c4663c82144.png)
 ---
 
@@ -391,7 +394,9 @@ find / -name junk > results.txt
 ```
 
 You might still see many errors on screen.
+
 ![39068885716b4d720f88cd1eab7b0b3d.png](../_resources/39068885716b4d720f88cd1eab7b0b3d.png)
+
 Why?
 
 * `>` redirects **STDOUT (1)** only
@@ -419,6 +424,7 @@ If you do not care about error messages at all:
 find / -name junk 2> /dev/null
 ```
 **Explanation:**
+
 ![b0d552cbb15aa850fd9d83d338c7a6d0.png](../_resources/b0d552cbb15aa850fd9d83d338c7a6d0.png)
 
 * Results are displayed to `STDOUT`. Errors to `/dev/null`
@@ -605,6 +611,7 @@ cat fruits.txt | sort
 ![fe98897a7e7f2f7b90e498436a91620b.png](../_resources/fe98897a7e7f2f7b90e498436a91620b.png)
 
 **Numeric sorting problem**
+
 ![e10967fb5fdd30f570848d739c1d3cf8.png](../_resources/e10967fb5fdd30f570848d739c1d3cf8.png)
 
 **Numeric sort**
@@ -658,9 +665,11 @@ head -n 5 people_list.csv | tail -n +2 | sort -t '/' -k 3
 grep pattern filename
 ```
 Example:
+
 ![f99697658b0fdc4f7f4059c32a6e1603.png](../_resources/f99697658b0fdc4f7f4059c32a6e1603.png)
 
 **Recommend to use quotes**
+
 ![ed2ed886ed95180ccd798c6cc2837680.png](../_resources/ed2ed886ed95180ccd798c6cc2837680.png)
 
 Quotes are recommended for:
@@ -676,6 +685,7 @@ grep -i "Pp" fruits.txt
 ![5d6e0d27214409ce5d14c8d0e8ac2031.png](../_resources/5d6e0d27214409ce5d14c8d0e8ac2031.png) 	
 
 **Counting matches with `wc`**
+
 ![1e58e50802ccfe27a6a53311c746f4f4.png](../_resources/1e58e50802ccfe27a6a53311c746f4f4.png)
 * Counts how many records matched
 
@@ -1323,6 +1333,7 @@ sudo passwd bob
 ```
 
 ### Switching Users (`su`)
+
 `su` = substitute user
 ![f24efcc7cd1da64ddd83c5a67690822a.png](../_resources/f24efcc7cd1da64ddd83c5a67690822a.png)
 
@@ -1513,9 +1524,11 @@ fuser [options] file | directory | port
 ```
 
 **Example:**
+
 ![87b3706e4dcc749b56915dcdc59e79a1.png](../_resources/87b3706e4dcc749b56915dcdc59e79a1.png)
 
 **See more details**: `fuser -v test.log`
+
 ![9f3f20ff9cc5b09d94dd6ceae4575621.png](../_resources/9f3f20ff9cc5b09d94dd6ceae4575621.png)
 
 **Find which process is using a directory**: `fuser -v /home/nrajanna/`

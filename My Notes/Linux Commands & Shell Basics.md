@@ -1544,6 +1544,7 @@ fuser [options] file | directory | port
 | `e`  | Executable        |
 
 **Find who is using a port**: `fuser -v 8088/tcp`
+
 ![0d29fbe2cc8b10b91b03e81fabf91db6.png](../_resources/0d29fbe2cc8b10b91b03e81fabf91db6.png)
 
 **Kill processes using a file or port**
